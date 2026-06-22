@@ -1,0 +1,51 @@
+{
+  "title": "Sample Quiz",
+  "category": "Agham",
+  "difficulty": "Madali",
+  "lessons": [
+    {
+      "title": "Ang Sistemang Solar",
+      "content": "Ang Sistemang Solar ay binubuo ng Araw at lahat ng mga bagay na umiikot dito dahil sa grabidad.",
+      "bullets": [
+        "Ang Mercury ang pinakamalapit na planeta sa Araw.",
+        "Ang Earth ang tanging planeta na kilalang may buhay.",
+        "Ang Blue Sky ay makikita sa Earth tuwing maliwanag ang araw."
+      ]
+    },
+    {
+      "title": "Mga Kabisera at Bansa",
+      "content": "Ang bawat bansa ay may sariling sentro ng pamahalaan na tinatawag na kabisera o capital.",
+      "bullets": [
+        "Paris ang kabisera ng France.",
+        "London ang kabisera ng United Kingdom."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the capital of France?",
+      "correct_answer": "Paris",
+      "distractors": ["London", "Berlin", "Madrid"]
+    },
+    {
+      "question": "Which planet is closest to the Sun?",
+      "correct_answer": "Mercury",
+      "distractors": ["Venus", "Earth", "Mars"]
+    },
+    {
+      "question": "What is 2 + 2?",
+      "correct_answer": "4",
+      "distractors": ["3", "5", "22"]
+    },
+    {
+      "question": "Who wrote Romeo and Juliet?",
+      "correct_answer": "Shakespeare",
+      "distractors": ["Dickens", "Tolkien", "Hemingway"]
+    },
+    {
+      "question": "What color is the sky on a clear day?",
+      "correct_answer": "Blue",
+      "distractors": ["Green", "Red", "Yellow"]
+    }
+  ]
+}
