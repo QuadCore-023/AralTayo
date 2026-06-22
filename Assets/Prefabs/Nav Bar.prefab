@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 88780975779487533}
+  - component: {fileID: 88780975779487534}
   m_Layer: 0
   m_Name: Nav Bar
   m_TagString: Untagged
@@ -1069,3 +1070,23 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &88780975779487534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019186427832006014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12f451e948d17f4b960ec827e632d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navBedroomButton: {fileID: 6485877945720367157}
+  navDiningButton: {fileID: 1677841346535691064}
+  navHallwayButton: {fileID: 1328658801946723371}
+  navTabletButton: {fileID: 7021882702781199444}
+  bedroomPanel: {fileID: 0}
+  diningPanel: {fileID: 0}
+  hallwayPanel: {fileID: 0}
+  tabletPanel: {fileID: 0}

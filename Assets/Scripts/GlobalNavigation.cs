@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class GlobalNavigation : MonoBehaviour
 {
@@ -10,17 +9,7 @@ public class GlobalNavigation : MonoBehaviour
     public Button navHallwayButton;
     public Button navTabletButton;
 
-    [Header("Navigation Mode")]
-    [Tooltip("If true, clicking a button loads a new scene. If false, it toggles UI Panels in the same scene.")]
-    public bool useSceneNavigation = true;
-
-    [Header("Scene Names (Scene Mode)")]
-    public string bedroomSceneName = "BedroomScene";
-    public string diningSceneName = "DiningScene";
-    public string hallwaySceneName = "HallwayScene";
-    public string tabletSceneName = "TabletScene";
-
-    [Header("UI Panels (Panel Mode)")]
+    [Header("UI Panels")]
     public GameObject bedroomPanel;
     public GameObject diningPanel;
     public GameObject hallwayPanel;
@@ -42,34 +31,25 @@ public class GlobalNavigation : MonoBehaviour
     }
 
     private void OnBedroomClicked() {
-        NavigateTo(bedroomSceneName, bedroomPanel);
+        ShowPanel(bedroomPanel);
     }
 
     private void OnDiningClicked() {
-        NavigateTo(diningSceneName, diningPanel);
+        ShowPanel(diningPanel);
     }
 
     private void OnHallwayClicked() {
-        NavigateTo(hallwaySceneName, hallwayPanel);
+        ShowPanel(hallwayPanel);
     }
 
     private void OnTabletClicked() {
-        NavigateTo(tabletSceneName, tabletPanel);
+        ShowPanel(tabletPanel);
     }
 
-    private void NavigateTo(string sceneName, GameObject panel) {
-        if (useSceneNavigation) {
-            if (!string.IsNullOrEmpty(sceneName)) {
-                SceneManager.LoadScene(sceneName);
-            } else {
-                Debug.LogWarning("Target scene name is empty!");
-            }
-        } else {
-            // Toggles active panels in the scene
-            if (bedroomPanel != null) bedroomPanel.SetActive(bedroomPanel == panel);
-            if (diningPanel != null) diningPanel.SetActive(diningPanel == panel);
-            if (hallwayPanel != null) hallwayPanel.SetActive(hallwayPanel == panel);
-            if (tabletPanel != null) tabletPanel.SetActive(tabletPanel == panel);
-        }
+    private void ShowPanel(GameObject panel) {
+        if (bedroomPanel != null) bedroomPanel.SetActive(bedroomPanel == panel);
+        if (diningPanel != null) diningPanel.SetActive(diningPanel == panel);
+        if (hallwayPanel != null) hallwayPanel.SetActive(hallwayPanel == panel);
+        if (tabletPanel != null) tabletPanel.SetActive(tabletPanel == panel);
     }
 }
